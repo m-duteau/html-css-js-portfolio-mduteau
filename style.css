@@ -165,6 +165,7 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    position: relative;
 }
 
 .section__pic-container {
@@ -206,6 +207,11 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+.nonclick-icon {
+    cursor: default;
+    height: 3rem;
 }
 
 /* BUTTONS */
@@ -313,4 +319,51 @@ section {
 .about-pic {
     -webkit-filter: grayscale(50%);
     filter: about-pic;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+#experience .details-container {
+    flex: 1;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: left;
+    gap: 1.5rem;
+}
+
+article .nonclick-icon {
+    height: 2rem;
+}
+
+article h3 {
+    margin-top: 4px;
 }
