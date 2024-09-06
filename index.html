@@ -1,278 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Michael Duteau</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
+      <div class="logo">Michael Duteau</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Michael Duteau</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-            </div>
+      <div class="logo">Michael Duteau</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Michael Duteau profile picture"/>
-        </div>
-        <div class="section__text">
-            <h1 class="title">Michael Duteau</h1>
-            <p class="section__text__p1">Software Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/mduteau-resume.pdf')">
-                    Download Resume
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn profile" class="icon"
-                onclick="window.open('https://www.linkedin.com/in/michael-duteau/')"
-                />
-                <img
-                src="./assets/github.png"
-                alt="GitHub profile" class="icon"
-                onclick="window.open('https://github.com/m-duteau')"
-                />
-            </div>
-        </div>
+      <div class="section__pic-container">
         <img
+          src="./assets/profile-pic.png"
+          alt="Michael Duteau profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Michael Duteau</h1>
+        <p class="section__text__p1">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/mduteau-resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/michael-duteau/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub profile"
+            class="icon"
+            onclick="window.open('https://github.com/m-duteau')"
+          />
+        </div>
+      </div>
+      <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#about'"
-        />
+      />
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img
-                src="./assets/about-pic.jpg"
-                alt="About picture"
-                class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                        src="./assets/education.png"
-                        alt="experience icon"
-                        class="nonclick-icon"
-                        />
-                        <h3>Education</h3>
-                        <p>August 2024 graduate of<br />
-                            Southern New Hampshire University<br />
-                            Bachelor's of Science in Computer Science<br />
-                            Software Engineering Concentration</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>After over a decade of working in the animal care field,
-                    I decided to take the plunge and pursue a career in software development.
-                    Starting in January of 2022, I began my academic journey at Southern New Hampshire University,
-                    where I applied my passion for logic and technology to complete numerous challenges and projects.
-                    As a recent graduate, I am eager to apply the knowledge and skills I've learned to workplaces
-                    that are in need of a candidate that is ready and willing to work diligently and expand their
-                    proficiency in software development ideologies.</p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="About picture"
+            class="about-pic"
+          />
         </div>
-        <img
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="experience icon"
+                class="nonclick-icon"
+              />
+              <h3>Education</h3>
+              <p>
+                August 2024 graduate of<br />
+                Southern New Hampshire University<br />
+                Bachelor's of Science in Computer Science<br />
+                Software Engineering Concentration
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              After over a decade of working in the animal care field, I decided
+              to take the plunge and pursue a career in software development.
+              Starting in January of 2022, I began my academic journey at
+              Southern New Hampshire University, where I applied my passion for
+              logic and technology to complete numerous challenges and projects.
+              As a recent graduate, I am eager to apply the knowledge and skills
+              I've learned to workplaces that are in need of a candidate that is
+              ready and willing to work diligently and expand their proficiency
+              in software development ideologies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
-        />
+      />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>TypeScript</h3>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>HTML</h3>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>AngularJS</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>Express.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>Node.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>Handlebars.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>MongoDB</h3>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>CSS</h3>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>C/C++</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                              src="./assets/checkmark.png"
-                              alt="Experience icon"
-                              class="nonclick-icon"
-                            />
-                            <div>
-                                <h3>OpenGL (C++)</h3>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>AngularJS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>Express.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>Handlebars.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages & APIs</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="nonclick-icon"
+                />
+                <div>
+                  <h3>OpenGL (C++)</h3>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img
+      </div>
+      <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-        />
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Dashboard w/ CRUD Module
+            </h2>
+            <div class="text-container">
+              <p>
+                Application utilizing Python, MongoDB, and CRUD functionality.
+                Provides management of a collection using data set provided by
+                Austin Animal Shelter.
+                This project creates a dashboard for Grazioso Salvare, who
+                wishes to identify dogs for training using specific parameters.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/m-duteau/Grazioso-Salvare-Dashboard-w-CRUD-Module')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Embedded C for Microcontroller
+            </h2>
+            <div class="text-container">
+              <p>
+                Two .c files containing code meant to be run on a TI
+                CC3220S-LAUNCHXL microcontroller.
+                The uartecho.c file contains code that modifies the on/off state
+                of the mcu's LED lights by utilizing a state machine that
+                interprets user input.
+                The gpiointerrupt.c file contains code that runs the mcu as a
+                prototype thermometer,
+                using the ambient room temperature to determine the heat mode
+                (on/off) based on the setpoint that is set by the user.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/m-duteau/CS350ESAT')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              3D Scene using OpenGL
+            </h2>
+            <div class="text-container">
+              <p>
+                A program that runs a 3D scene using WASD and mouse controls.
+                The goal of the project was to replicate a reference photo
+                containing four objects.
+                Each 3D object was constructed solely using vertex arrays and
+                matrix transformations.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/m-duteau/CS330-ComputerGraphicAndVisualization')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
